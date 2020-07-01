@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wetbat-client/precache-manifest.409362894852505100e982ed79904ddc.js"
+  "/wetbat-client/precache-manifest.9ab42683227dd798c5fede2bb09fcbae.js"
 );
 
 self.addEventListener('message', (event) => {

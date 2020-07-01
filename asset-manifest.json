@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/wetbat-client/static/css/main.8e9f8467.chunk.css",
-    "main.js": "/wetbat-client/static/js/main.efc88167.chunk.js",
-    "main.js.map": "/wetbat-client/static/js/main.efc88167.chunk.js.map",
+    "main.js": "/wetbat-client/static/js/main.a9ed5760.chunk.js",
+    "main.js.map": "/wetbat-client/static/js/main.a9ed5760.chunk.js.map",
     "runtime-main.js": "/wetbat-client/static/js/runtime-main.5f4f6be8.js",
     "runtime-main.js.map": "/wetbat-client/static/js/runtime-main.5f4f6be8.js.map",
     "static/css/2.d0176e96.chunk.css": "/wetbat-client/static/css/2.d0176e96.chunk.css",
-    "static/js/2.4a4a39cc.chunk.js": "/wetbat-client/static/js/2.4a4a39cc.chunk.js",
-    "static/js/2.4a4a39cc.chunk.js.map": "/wetbat-client/static/js/2.4a4a39cc.chunk.js.map",
+    "static/js/2.860fc3b9.chunk.js": "/wetbat-client/static/js/2.860fc3b9.chunk.js",
+    "static/js/2.860fc3b9.chunk.js.map": "/wetbat-client/static/js/2.860fc3b9.chunk.js.map",
     "index.html": "/wetbat-client/index.html",
-    "precache-manifest.409362894852505100e982ed79904ddc.js": "/wetbat-client/precache-manifest.409362894852505100e982ed79904ddc.js",
+    "precache-manifest.9ab42683227dd798c5fede2bb09fcbae.js": "/wetbat-client/precache-manifest.9ab42683227dd798c5fede2bb09fcbae.js",
     "service-worker.js": "/wetbat-client/service-worker.js",
     "static/css/2.d0176e96.chunk.css.map": "/wetbat-client/static/css/2.d0176e96.chunk.css.map",
     "static/css/main.8e9f8467.chunk.css.map": "/wetbat-client/static/css/main.8e9f8467.chunk.css.map",
-    "static/js/2.4a4a39cc.chunk.js.LICENSE.txt": "/wetbat-client/static/js/2.4a4a39cc.chunk.js.LICENSE.txt",
-    "static/js/main.efc88167.chunk.js.LICENSE.txt": "/wetbat-client/static/js/main.efc88167.chunk.js.LICENSE.txt",
+    "static/js/2.860fc3b9.chunk.js.LICENSE.txt": "/wetbat-client/static/js/2.860fc3b9.chunk.js.LICENSE.txt",
+    "static/js/main.a9ed5760.chunk.js.LICENSE.txt": "/wetbat-client/static/js/main.a9ed5760.chunk.js.LICENSE.txt",
     "static/media/marc.jpg": "/wetbat-client/static/media/marc.8880a65c.jpg",
     "static/media/sidebar-1.jpg": "/wetbat-client/static/media/sidebar-1.8e9f0a3c.jpg",
     "static/media/sidebar-2.jpg": "/wetbat-client/static/media/sidebar-2.310509c9.jpg",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.5f4f6be8.js",
     "static/css/2.d0176e96.chunk.css",
-    "static/js/2.4a4a39cc.chunk.js",
+    "static/js/2.860fc3b9.chunk.js",
     "static/css/main.8e9f8467.chunk.css",
-    "static/js/main.efc88167.chunk.js"
+    "static/js/main.a9ed5760.chunk.js"
   ]
 }
