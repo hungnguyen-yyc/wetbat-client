@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "54bb89902b898fbcd360b20a2e035573",
+    "revision": "9efbeda2bff7bc92eb1207aa1330d3b7",
     "url": "/wetbat-client/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wetbat-client/static/css/2.d0176e96.chunk.css"
   },
   {
-    "revision": "ec7032a68abe59123d96",
+    "revision": "8d8b2404b908fa60f0ca",
     "url": "/wetbat-client/static/css/main.8e9f8467.chunk.css"
   },
   {
@@ -20,12 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wetbat-client/static/js/2.355e2f25.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ec7032a68abe59123d96",
-    "url": "/wetbat-client/static/js/main.43fa5340.chunk.js"
+    "revision": "8d8b2404b908fa60f0ca",
+    "url": "/wetbat-client/static/js/main.bb8e2339.chunk.js"
   },
   {
     "revision": "f7bdf0cfc9ea0dd44285692948c2d84f",
-    "url": "/wetbat-client/static/js/main.43fa5340.chunk.js.LICENSE.txt"
+    "url": "/wetbat-client/static/js/main.bb8e2339.chunk.js.LICENSE.txt"
   },
   {
     "revision": "b57b56e72edef0b0feed",
