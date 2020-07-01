@@ -1,10 +1,11 @@
 **********************************
 Wet bat client
 
-Use Material Dashboard React for React UI framework with minimal changes made to my side.
-Created Quote List to display quotes and their info.
-Main focus is on the back end, please check it at wetbat-api: https://github.com/hungnguyenyyc/wetbat-api
-Check it launch at: https://hungnguyenyyc.github.io/wetbat-client/
+- Use Material Dashboard React for React UI framework with minimal changes made to my side.
+- Created Quote List to display quotes and their info.
+- Main focus is on the back end, please check it at wetbat-api: https://github.com/hungnguyenyyc/wetbat-api
+- See it works at: https://hungnguyenyyc.github.io/wetbat-client/#/admin/dashboard
+
 
 **********************************
 

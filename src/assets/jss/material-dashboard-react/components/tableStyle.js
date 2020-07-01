@@ -31,14 +31,12 @@ const tableStyle = theme => ({
   grayTableHeader: {
     color: grayColor[0]
   },
-  detailSection: {
-    display: "inline-block",
+  tableWrapper: {
     width: "50%",
   },
   table: {
-    display: "inline-block",
     marginBottom: "0",
-    width: "50%",
+    width: "100%",
     maxWidth: "100%",
     backgroundColor: "transparent",
     borderSpacing: "0",
@@ -56,12 +54,15 @@ const tableStyle = theme => ({
     lineHeight: "1.42857143",
     padding: "12px 8px",
     verticalAlign: "middle",
-    fontSize: "0.8125rem"
+    fontSize: "0.8125rem",
   },
   tableResponsive: {
     width: "100%",
     marginTop: theme.spacing(3),
-    overflowX: "auto"
+    overflowX: "auto",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
   },
   tableHeadRow: {
     height: "56px",
@@ -75,7 +76,14 @@ const tableStyle = theme => ({
     color: "inherit",
     display: "table-row",
     outline: "none",
-    verticalAlign: "middle"
+    verticalAlign: "middle",
+    "&:hover": {
+      background: "#efefef",
+      cursor: "pointer"
+    },
+  },
+  tableFooterCell: {
+    border: "none"
   }
 });
 

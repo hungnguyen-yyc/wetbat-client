@@ -12,6 +12,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
 // core components
 import styles from "assets/jss/material-dashboard-react/components/tableStyle.js";
+import { TableFooter } from "@material-ui/core";
 
 const useStyles = makeStyles(styles);
 
@@ -23,59 +24,74 @@ export default function QuoteList(props) {
   const [hasError, setErrors] = useState(false);
   const [selectedQuote, setSelectedQuote] = useState({});
   const [showDetails, setShowDetails] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   async function fetchData() {
     const res = await fetch("https://wetbat.azurewebsites.net/Quote");
     res
       .json()
-      .then(res => setQuotes(res))
-      .catch(err => setErrors(err));
+      .then(res => {
+        setQuotes(res); 
+        setLoading(false); 
+      })
+      .catch(err => {
+        setErrors(err);
+        setLoading(false);
+      });
   }
 
   useEffect(() => {
+    setLoading(true);
     fetchData();
   }, []);
 
   return (
     <div className={classes.tableResponsive}>
-      <Table className={classes.table}>
-        {tableHead !== undefined ? (
-          <TableHead className={classes[tableHeaderColor + "TableHeader"]}>
-            <TableRow className={classes.tableHeadRow}>
-              {tableHead.map((prop, key) => {
-                return (
-                  <TableCell
-                    className={classes.tableCell + " " + classes.tableHeadCell}
-                    key={key}
-                  >
-                    {prop}
-                  </TableCell>
-                );
-              })}
-            </TableRow>
-          </TableHead>
-        ) : null}
-        <TableBody>
-          {quotes.map((quote, key) => {
-            return (
-              <TableRow key={key} className={classes.tableBodyRow} onClick={() => { setSelectedQuote(quote); setShowDetails(true); }}>
-                <TableCell className={classes.tableCell}>
-                  {quote.id.substring(0,7)}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {quote.reponsibleTraveller.user.firstName}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {quote.trip.destination.name}
-                </TableCell>
-                <TableCell className={classes.tableCell}>
-                  {quote.amount}
-                </TableCell>
+      <div className={classes.tableWrapper}>
+        <Table className={classes.table}>
+          {tableHead !== undefined ? (
+            <TableHead className={classes[tableHeaderColor + "TableHeader"]}>
+              <TableRow className={classes.tableHeadRow}>
+                {tableHead.map((prop, key) => {
+                  return (
+                    <TableCell
+                      className={classes.tableCell + " " + classes.tableHeadCell}
+                      key={key}
+                    >
+                      {prop}
+                    </TableCell>
+                  );
+                })}
               </TableRow>
-            );
-          })}
-        </TableBody>
-      </Table>
+            </TableHead>
+          ) : null}
+          <TableBody>
+            {quotes.map((quote, key) => {
+              return (
+                <TableRow key={key} className={classes.tableBodyRow} onClick={() => { setSelectedQuote(quote); setShowDetails(true); }}>
+                  <TableCell className={classes.tableCell}>
+                    {quote.id.substring(0,7)}
+                  </TableCell>
+                  <TableCell className={classes.tableCell}>
+                    {quote.reponsibleTraveller.user.firstName}
+                  </TableCell>
+                  <TableCell className={classes.tableCell}>
+                    {quote.trip.destination.name}
+                  </TableCell>
+                  <TableCell className={classes.tableCell}>
+                    {quote.amount}
+                  </TableCell>
+                </TableRow>
+              );
+            })}
+          </TableBody>
+          <TableFooter >
+            <TableRow>
+              <TableCell className={classes.tableFooterCell} colSpan={4} >{loading ? 'Loading...' : ''}</TableCell>
+            </TableRow>
+          </TableFooter>
+        </Table>
+      </div>
       <div className={classes.detailSection}>
         <h4>{showDetails ? 'Quote for: ' : ''}</h4>
         <h2>{selectedQuote.reponsibleTraveller?.user?.firstName} {selectedQuote.reponsibleTraveller?.user?.lastName}</h2>
