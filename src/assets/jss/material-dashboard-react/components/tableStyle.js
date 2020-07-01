@@ -31,13 +31,18 @@ const tableStyle = theme => ({
   grayTableHeader: {
     color: grayColor[0]
   },
+  detailSection: {
+    display: "inline-block",
+    width: "50%",
+  },
   table: {
+    display: "inline-block",
     marginBottom: "0",
-    width: "100%",
+    width: "50%",
     maxWidth: "100%",
     backgroundColor: "transparent",
     borderSpacing: "0",
-    borderCollapse: "collapse"
+    borderCollapse: "collapse",
   },
   tableHeadCell: {
     color: "inherit",
