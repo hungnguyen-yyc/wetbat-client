@@ -31,7 +31,6 @@ ReactDOM.render(
   <HashRouter basename="/">
     <Switch>
       <Route path="/admin" component={Admin} />
-      <Route path="/" component={Dashboard} />
       <Redirect from="/" to="/admin" />
     </Switch>
   </HashRouter>,
